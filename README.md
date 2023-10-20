@@ -31,7 +31,7 @@ docker run -it \
 ```
 ## Update config.toml
 
-Go to: graph-node-configs/config.toml
+Go to: [graph-node-configs/config.toml](https://github.com/EVM-BUILDER/GraphNode-Evm/blob/main/graph-node-configs/config.toml)
 
 Update connection postgresql
 
