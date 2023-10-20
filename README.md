@@ -31,7 +31,18 @@ docker run -it \
 ```
 ## Update config.toml
 Update connection postgresql
-Update chains.chain
+Update chains.chain in graph-node-configs/config.toml
+
+```
+[chains.YOUR_CHAIN_NAME]
+shard = "primary"
+provider = [ { label = "YOUR_LABLE", url = "https://YOUR_CHAIN_RPC", features = ["archive", "traces"] } ]
+```
+Replace your custom info with:
+
+YOUR_CHAIN_NAME
+YOUR_LABLE
+YOUR_CHAIN_RPC
 
 ## Docker Compose
 
