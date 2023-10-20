@@ -29,6 +29,9 @@ docker run -it \
   -e ethereum=mainnet:http://localhost:8545/ \
   graphprotocol/graph-node:latest
 ```
+## Update config.toml
+Update connection postgresql
+Update chains.chain
 
 ## Docker Compose
 
