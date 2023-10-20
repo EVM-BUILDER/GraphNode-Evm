@@ -1,0 +1,22 @@
+[store]
+[store.primary]
+connection = "postgresql://graph-node:let-me-in@postgres:5432/graph-node"
+pool_size = 10
+
+
+[chains]
+ingestor = "docker"
+
+
+[chains.credit]
+shard = "primary"
+provider = [ { label = "creditsmartchain", url = "https://rpc.creditsmartchain.com/", features = ["archive", "traces"] } ]
+
+
+[deployment]
+[[deployment.rule]]
+indexers = [ "default" ]
+
+
+[general]
+query = "docker"
