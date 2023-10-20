@@ -30,13 +30,16 @@ docker run -it \
   graphprotocol/graph-node:latest
 ```
 ## Update config.toml
+
+Go to: graph-node-configs/config.toml
+
 Update connection postgresql
 
 ```
 connection = "postgresql://graph-node:let-me-in@postgres:5432/graph-node"
 ```
 
-Update chains.chain in graph-node-configs/config.toml
+Update chains.chain
 
 ```
 [chains.YOUR_CHAIN_NAME]
